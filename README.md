@@ -9,7 +9,9 @@ chrome浏览器
 
 打开超星慕课，进入到课程的某一个视频页，浏览器 `F12` 打开 `开发者工具` ，点击 `Source` -> `Page 边上的》` -> `Snippets` -> `New snippet`
 
-然后把 `auto-learnning.js` 的内容复制进右边的编辑栏，右键重命名为你喜欢的脚本名称，然后 `ctrl` + `s` 保存脚本，然后右键运行，就会在前端页面中增加两个按钮: `start auto script` 用于启动脚本，`stop auto script` 用于手动停止脚本。
+然后把 `auto-learnning.js` 的内容复制进右边的编辑栏，右键重命名为你喜欢的脚本名称，然后 `ctrl` + `s` 保存脚本，然后右键运行，就会在前端页面中增加两个按钮: `start auto script` 用于启动脚本，`stop auto script` 用于停止脚本。
+
+刷新网页即可重置（将网页恢复原状），重置后需要重新运行脚本。
 
 脚本只用于自动刷视频，课后作业需要自己做。参考答案 `answer.html` 来自 [CSDN博客-吴成伟0122](https://blog.csdn.net/qq_42859864/article/details/88608359)。虽然不全相同，但大部分都可以对应找到，做题足够了。
 

@@ -41,6 +41,7 @@ class autoScript {
                 console.log('new video');
                 targetIframe = document.getElementById('iframe').contentDocument.getElementsByTagName('iframe')[0].contentDocument;
                 this.video = targetIframe.getElementById('video_html5_api');
+                this.video.playbackRate = 2.0;
                 newVideo = false;
             }
             console.log('check pause');
