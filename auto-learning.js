@@ -11,6 +11,7 @@ class autoScript {
     runScript() {
         this.status = true;
         var targetIframe = document.getElementById('iframe').contentDocument.getElementsByTagName('iframe')[0].contentDocument;
+        disableAlert(targetIframe.body)
         this.video = targetIframe.getElementById('video_html5_api');
         console.log(this.video);
         this.video.playbackRate = 2.0;
@@ -40,6 +41,7 @@ class autoScript {
             if (newVideo) {
                 console.log('new video');
                 targetIframe = document.getElementById('iframe').contentDocument.getElementsByTagName('iframe')[0].contentDocument;
+                disableAlert(targetIframe.body)
                 this.video = targetIframe.getElementById('video_html5_api');
                 this.video.playbackRate = 2.0;
                 newVideo = false;
@@ -118,6 +120,13 @@ function addBtn() {
     btnStop.style.position = 'fixed'
     btnStop.style.top = '90px';
     document.body.appendChild(btnStop);
+}
+
+function disableAlert(element) {
+    var scriptElement = document.createElement('script');
+    scriptElement.innerHTML = 'window.alert = () => { };'
+    scriptElement.lang='javascript'
+    element.appendChild(scriptElement);
 }
 
 // 覆盖浏览器自带的弹窗，避免被打断
