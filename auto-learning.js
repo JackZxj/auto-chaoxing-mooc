@@ -104,7 +104,7 @@ function addBtn() {
     btnStart.style.padding = '5px';
     btnStart.style.margin = '10px';
     btnStart.style.position = 'fixed';
-    finnish.style.top = '50px';
+    btnStart.style.top = '50px';
     document.body.appendChild(btnStart);
 
     var btnStop = document.createElement('input');
@@ -115,7 +115,7 @@ function addBtn() {
     btnStop.style.padding = '5px';
     btnStop.style.margin = '10px';
     btnStop.style.position = 'fixed'
-    finnish.style.top = '90px';
+    btnStop.style.top = '90px';
     document.body.appendChild(btnStop);
 }
 
